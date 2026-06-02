@@ -2,8 +2,11 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" sizes="32x32" href="misdet.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="misdet.png">
+  <link rel="shortcut icon" href="misdet.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Un regalo para ti · entrada especial</title>
+  <title>Un poco de nosotros</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;1,400;1,700&family=Yeseva+One&family=IM+Fell+English:ital@0;1&family=Crimson+Pro:ital,wght@0,300;1,300;1,400&display=swap" rel="stylesheet">
@@ -262,23 +265,6 @@
       text-align: center;
       margin-bottom: 2.5rem;
     }
-    
-    /* ESTILO PARA LA IMAGEN DEL ENCABEZADO */
-    .header-img {
-      width: 140px;
-      height: auto;
-      margin-bottom: 1rem;
-      border-radius: 50%;
-      box-shadow: 0 6px 18px rgba(180, 60, 80, 0.25);
-      transition: transform 0.3s ease;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .header-img:hover {
-      transform: scale(1.02);
-    }
-    
     .titulo-collage h1 {
       font-family: 'Pinyon Script', cursive;
       font-size: 3.5rem;
@@ -443,9 +429,6 @@
         width: 75px;
         height: 75px;
       }
-      .header-img {
-        width: 100px;
-      }
     }
   </style>
 </head>
@@ -470,15 +453,14 @@
     <div class="spark" style="top: 15%; left: 12%; width: 6px; height: 6px;"></div>
     <div class="spark" style="bottom: 20%; right: 15%; animation-duration: 1.4s;"></div>
   </div>
+  <!-- EL TEXTO "HAZ CLIC EN EL MOÑO" HA SIDO ELIMINADO -->
 </div>
 
-<!-- TODO EL CONTENIDO ORIGINAL DE TU PÁGINA (CON IMAGEN EN EL ENCABEZADO) -->
+<!-- TODO EL CONTENIDO ORIGINAL DE TU PÁGINA (SIN MODIFICACIONES ESTRUCTURALES) -->
 <div class="heart-bg" id="heartBg"></div>
 
 <div class="collage-container">
   <div class="titulo-collage">
-    <!-- IMAGEN misdet.png EN EL ENCABEZADO (desde carpeta img) -->
-    <img src="img/misdet.png" alt="Misdet" class="header-img" onerror="this.src='https://placehold.co/140x140/ffe0e6/cf8a9a?text=misdet'">
     <h1>⋆ ˚｡⋆୨ Mis recuerdos mas especiales de ti ୧⋆ ˚｡⋆</h1>
     <p>cada imagen guarda un pedacito de lo que somos</p>
   </div>
@@ -674,8 +656,6 @@
       </div>
     </div>
 
-  </div>
-
   <div class="btn-carta">
     <button id="btnVolverCarta">✧  Sorpresa  ✧</button>
   </div>
@@ -723,7 +703,7 @@
     intentarReproducir(0);
   }
 
-  // Botón "Sorpresa" original (redirige a iLoveMisdet.html)
+  // Botón "Sorpresa" original
   const btnCarta = document.getElementById('btnVolverCarta');
   if (btnCarta) {
     btnCarta.addEventListener('click', () => {
